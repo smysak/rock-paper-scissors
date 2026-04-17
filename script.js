@@ -13,3 +13,12 @@ function getComputerChoice() {
 
 const compyTurn = getComputerChoice();
 console.log(compyTurn);
+
+function getHumanChoice() {
+    let humanChoice = prompt(`Make your choice:` , `rock, paper, or scissors`);
+
+    return humanChoice;
+}
+
+const humanTurn = getHumanChoice();
+console.log(humanTurn)
