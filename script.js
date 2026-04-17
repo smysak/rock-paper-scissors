@@ -8,7 +8,8 @@ function getComputerChoice() {
         computerChoice = `scissors`
     } else computerChoice = `paper`;
     
-    console.log(computerChoice);
+    return computerChoice;
 }
 
-getComputerChoice()
+const compyTurn = getComputerChoice();
+console.log(compyTurn);
