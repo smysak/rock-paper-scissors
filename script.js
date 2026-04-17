@@ -8,13 +8,14 @@ function getComputerChoice() {
         computerChoice = `scissors`
     } else computerChoice = `paper`;
     
+    console.log(computerChoice);
     return computerChoice;
 }
 
 
 function getHumanChoice() {
     let humanChoice = prompt(`Make your choice:` , `rock, paper, or scissors`);
-
+    console.log(humanChoice);
     return humanChoice;
 }
 
@@ -22,22 +23,23 @@ function getHumanChoice() {
 let humanScore = 0;
 let compyScore = 0;
 
+
 function playRound(humanChoice, computerChoice) {
 if (humanChoice === computerChoice) {
-    console.log("Tie!");
+    alert("Tie!");
 } else if (humanChoice === `rock` && computerChoice === `paper`) {
-    console.log("Paper covers rock - You lose!");
+    alert("Paper covers rock - You lose!");
 } else if (humanChoice === `rock` && computerChoice === `scissors`) {
-    console.log("Rock breaks scissors - You win!");
+    alert("Rock breaks scissors - You win!");
 } else if (humanChoice === `paper` && computerChoice === `rock`) {
-    console.log("Paper covers rock - You win!");
+    alert("Paper covers rock - You win!");
 } else if (humanChoice === `paper` && computerChoice === `scissors`) {
-    console.log("Rock breaks scissors - You win!");
+    alert("Rock breaks scissors - You win!");
 } else if (humanChoice === `scissors` && computerChoice === `rock`) {
-    console.log("Rock breaks scissors - You lose!");
+    alert("Rock breaks scissors - You lose!");
 } else if (humanChoice === `scissors` && computerChoice === `paper`) {
-    console.log("Scissors cut paper - You win!");
-} else (console.log("You're terrible at this game!"));
+    alert("Scissors cut paper - You win!");
+} else alert("You're terrible at this game!");
 }
 
 
