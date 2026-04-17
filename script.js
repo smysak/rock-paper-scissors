@@ -3,10 +3,12 @@ function getComputerChoice() {
     console.log(computerChoice);
 
     if (computerChoice <= 0.333) {
-        console.log(`rock`)
+        computerChoice = `rock`
     } else if (computerChoice >0.666) {
-        console.log(`scissors`)
-    } else console.log(`paper`)
+        computerChoice = `scissors`
+    } else computerChoice = `paper`;
+    
+    console.log(computerChoice);
 }
 
 getComputerChoice()
