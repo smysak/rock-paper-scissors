@@ -22,3 +22,6 @@ function getHumanChoice() {
 
 const humanTurn = getHumanChoice();
 console.log(humanTurn)
+
+let humanScore = 0;
+let compyScore = 0;
