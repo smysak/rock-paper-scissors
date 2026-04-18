@@ -53,4 +53,4 @@ const humanTurn = getHumanChoice();
 const compyTurn = getComputerChoice();
 
 playRound(humanTurn, compyTurn);
-alert("You: " + humanScore , "Compy: " + compyScore)
+alert("You: " + humanScore + " Compy: " + compyScore)
