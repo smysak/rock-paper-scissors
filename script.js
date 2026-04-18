@@ -4,7 +4,7 @@ function getComputerChoice() {
 
     if (computerChoice <= 0.333) {
         computerChoice = `rock`
-    } else if (computerChoice >0.666) {
+    } else if (computerChoice > 0.666) {
         computerChoice = `scissors`
     } else computerChoice = `paper`;
     
@@ -34,7 +34,7 @@ if (humanChoice === computerChoice) {
 } else if (humanChoice === `paper` && computerChoice === `rock`) {
     alert("Paper covers rock - You win!");
 } else if (humanChoice === `paper` && computerChoice === `scissors`) {
-    alert("Rock breaks scissors - You win!");
+    alert("Scissors cut paper - You lose!");
 } else if (humanChoice === `scissors` && computerChoice === `rock`) {
     alert("Rock breaks scissors - You lose!");
 } else if (humanChoice === `scissors` && computerChoice === `paper`) {
