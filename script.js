@@ -27,8 +27,8 @@ let compyScore = 0;
 function playRound(humanChoice, computerChoice) {
 if (humanChoice === computerChoice) {
     alert("Tie!");
-} else if (humanChoice === `rock` && computerChoice === `paper`) {
-    alert("Paper covers rock - You lose!");
+} else if (humanChoice === `scissors` && computerChoice === `paper`) {
+    alert("Scissors cut paper - You win!");
 } else if (humanChoice === `rock` && computerChoice === `scissors`) {
     alert("Rock breaks scissors - You win!");
 } else if (humanChoice === `paper` && computerChoice === `rock`) {
@@ -37,8 +37,10 @@ if (humanChoice === computerChoice) {
     alert("Scissors cut paper - You lose!");
 } else if (humanChoice === `scissors` && computerChoice === `rock`) {
     alert("Rock breaks scissors - You lose!");
-} else if (humanChoice === `scissors` && computerChoice === `paper`) {
-    alert("Scissors cut paper - You win!");
+} else if (humanChoice === `rock` && computerChoice === `paper`) {
+    alert("Paper covers rock - You lose!");
+    
+
 } else alert("You're terrible at this game!");
 }
 
