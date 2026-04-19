@@ -49,8 +49,8 @@ if (humanChoice === computerChoice) {
 }
 
 
-const humanTurn = getHumanChoice();
-const compyTurn = getComputerChoice();
+const humanTurn = getHumanChoice;
+const compyTurn = getComputerChoice;
 
-playRound(humanTurn, compyTurn);
+playRound(humanTurn(), compyTurn());
 alert("You: " + humanScore + " Compy: " + compyScore)
