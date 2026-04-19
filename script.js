@@ -48,5 +48,12 @@ if (humanChoice === computerChoice) {
 } else alert("You're terrible at this game!");
 }
 
-playRound(getHumanChoice(), getComputerChoice());
-alert("You: " + humanScore + " Compy: " + compyScore)
+function playGame() {
+    for (i=0; i < 5; i++) {
+        playRound(getHumanChoice(), getComputerChoice());
+        alert("You: " + humanScore + " Compy: " + compyScore);
+    }
+    alert("Final Score: You " + humanScore + " Compy: " + compyScore);
+}
+
+playGame();
