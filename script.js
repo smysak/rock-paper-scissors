@@ -48,6 +48,7 @@ function playRound(humanChoice, computerChoice) {
 	} else alert("You're terrible at this game!");
 }
 
+
 function playGame() {
 	for (i=0; i < 5; i++) {
 		playRound(getHumanChoice(), getComputerChoice());
@@ -55,5 +56,6 @@ function playGame() {
 	}
 	alert("Final Score: You " + humanScore + " Compy: " + compyScore);
 }
+
 
 playGame();
