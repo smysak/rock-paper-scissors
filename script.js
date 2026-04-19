@@ -54,7 +54,7 @@ function playGame() {
 		playRound(getHumanChoice(), getComputerChoice());
 		alert("You: " + humanScore + " Compy: " + compyScore);
 	}
-	alert("Final Score: You " + humanScore + " Compy: " + compyScore);
+	alert("Final Score: You: " + humanScore + " Compy: " + compyScore);
 }
 
 
