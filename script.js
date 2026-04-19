@@ -48,9 +48,5 @@ if (humanChoice === computerChoice) {
 } else alert("You're terrible at this game!");
 }
 
-
-const humanTurn = getHumanChoice;
-const compyTurn = getComputerChoice;
-
-playRound(humanTurn(), compyTurn());
+playRound(getHumanChoice(), getComputerChoice());
 alert("You: " + humanScore + " Compy: " + compyScore)
