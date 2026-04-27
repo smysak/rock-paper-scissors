@@ -57,5 +57,7 @@ function playGame() {
 	alert("Final Score: You: " + humanScore + " Compy: " + compyScore);
 }
 
+const go = playGame;
 
-playGame();
+const startGame = document.querySelector(`#startGame`);
+startGame.addEventListener('click', go);
