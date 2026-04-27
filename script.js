@@ -31,27 +31,45 @@ hScoreCount.textContent = humanScore;
 const cScoreCount = document.getElementById('cScore');
 cScoreCount.textContent = compyScore;
 
+const alertHumanTurn = document.getElementById('humanTurnAlert');
+const alertComputerTurn = document.getElementById('computerTurnAlert');
+const alertRoundResult = document.getElementById('roundResultAlert');
+
 
 function playRound(humanChoice, computerChoice) {
 	if (humanChoice === computerChoice) {
-		alert("Tie!");
+		alertHumanTurn.textContent = "You chose " + humanChoice;
+		alertComputerTurn.textContent = "Compy chose " + computerChoice;
+		alertRoundResult.textContent = "Tie!";
 	} else if (humanChoice === `scissors` && computerChoice === `paper`) {
-		alert("Scissors cut paper - You win!");
+		alertHumanTurn.textContent = "You chose " + humanChoice;
+		alertComputerTurn.textContent = "Compy chose " + computerChoice;
+		alertRoundResult.textContent = "Scissors cut paper - You win!";
 		return ++humanScore;
 	} else if (humanChoice === `rock` && computerChoice === `scissors`) {
-		alert("Rock breaks scissors - You win!");
+		alertHumanTurn.textContent = "You chose " + humanChoice;
+		alertComputerTurn.textContent = "Compy chose " + computerChoice;
+		alertRoundResult.textContent = "Rock breaks scissors - You win!";
 		return ++humanScore;
 	} else if (humanChoice === `paper` && computerChoice === `rock`) {
-		alert("Paper covers rock - You win!");
+		alertHumanTurn.textContent = "You chose " + humanChoice;
+		alertComputerTurn.textContent = "Compy chose " + computerChoice;
+		alertRoundResult.textContent = "Paper covers rock - You win!";
 		return ++humanScore;
 	} else if (humanChoice === `paper` && computerChoice === `scissors`) {
-		alert("Scissors cut paper - You lose!");
+		alertHumanTurn.textContent = "You chose " + humanChoice;
+		alertComputerTurn.textContent = "Compy chose " + computerChoice;
+		alertRoundResult.textContent = "Scissors cut paper - You lose!";
 		return ++compyScore;
 	} else if (humanChoice === `scissors` && computerChoice === `rock`) {
-		alert("Rock breaks scissors - You lose!");
+		alertHumanTurn.textContent = "You chose " + humanChoice;
+		alertComputerTurn.textContent = "Compy chose " + computerChoice;
+		alertRoundResult.textContent = "Rock breaks scissors - You lose!";
 		return ++compyScore;
 	} else if (humanChoice === `rock` && computerChoice === `paper`) {
-		alert("Paper covers rock - You lose!");
+		alertHumanTurn.textContent = "You chose " + humanChoice;
+		alertComputerTurn.textContent = "Compy chose " + computerChoice;
+		alertRoundResult.textContent = "Paper covers rock - You lose!";
 		return ++compyScore;
 	} else alert("You're terrible at this game!");
 }
