@@ -20,18 +20,39 @@
             <div class="legal">For free*</div>
         </div>
     </header>
-    <div class="gameplayArea">
+    <div class="mainArea">
         <p>Play a game of five rounds against the computer. Do you think you can win against the vagaries of chance?</p>
-        <p>You will be asked to make your choice. The computer will randomly make it's choice.</p>
-        <h3>The Only Rules:</h3>
-        <ul>
-            <li>Rock breaks Scissors</li>
-            <li>Scissors cut Paper</li>
-            <li>Paper covers Rock</li>
-        <p>Click <button id="startGame">here</button> to accept the challenge.</p>
+        <div class="gameplayArea">
+            <div class="ruleset">
+                <h3>The Only Rules:</h3>
+                <ul>
+                    <li>Rock breaks Scissors</li>
+                    <li>Scissors cut Paper</li>
+                    <li>Paper covers Rock</li>
+                </ul>
+            </div>
+            <div class="tabletop">
+                <div class="selections">
+                    <p>Select your weapon of choice to accept the challenge.</p>
+                    <p>The computer will simultaneously make it's choice.</p>
+                    <button id="rock">Rock</button>
+                    <button id="paper">Paper</button>
+                    <button id="scissors">Scissors</button>
+                </div>
+                    <div class="alertBox">
+                        <p>some text here</p>
+                    </div>
+                    <div class="scoreBox">
+                        <ul>
+                            <li>Your score: <span id="hScore"></span></li>
+                            <li>Computer score: <span id="cScore"></span></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
     </div>
     <footer>
-        <p>*time is money</p>
+        <p>*time <i>is</i> money</p>
     </footer>
 </body>
 </html>

@@ -13,6 +13,7 @@ header {
     padding: 0px;
     display: flex;
     align-items: center;
+    border: 3px solid black;
 }
 
 header .logo {
@@ -29,11 +30,38 @@ header .subtitle {
     justify-items: right;
 }
 
-.gameplayArea {
+.mainArea {
     background-color: tomato;
     margin: 0px;
     padding: 8px;
     flex: 1;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameplayArea {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    justify-content: space-evenly;
+}
+
+.ruleset {
+    border: 3px solid black;
+    padding: 16px;
+    flex: 1;
+    margin: 8px;
+}
+
+.tabletop {
+    border: 3px solid black;
+    padding: 16px;
+    flex: 5;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 footer {
@@ -41,4 +69,25 @@ footer {
     margin: 0px;
     padding: 8px;
     justify-items: right;
+    border: 3px solid black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 16px 0px;
+}
+
+li {
+    padding: 8px;
+}
+
+.scoreBox {
+   margin-left: auto;
+   font-weight: 700;
+   text-align: right;
+}
+
+.scoreBox ul {
+    list-style-position: right;
 }

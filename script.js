@@ -23,6 +23,12 @@ function getHumanChoice() {
 let humanScore = 0;
 let compyScore = 0;
 
+const hScoreCount = document.getElementById('hScore');
+hScoreCount.textContent = humanScore;
+
+const cScoreCount = document.getElementById('cScore');
+cScoreCount.textContent = compyScore;
+
 
 function playRound(humanChoice, computerChoice) {
 	if (humanChoice === computerChoice) {
@@ -48,6 +54,8 @@ function playRound(humanChoice, computerChoice) {
 	} else alert("You're terrible at this game!");
 }
 
+/*
+		// This function will not be used with the new UI
 
 function playGame() {
 	for (i=0; i < 5; i++) {
@@ -56,8 +64,4 @@ function playGame() {
 	}
 	alert("Final Score: You: " + humanScore + " Compy: " + compyScore);
 }
-
-const go = playGame;
-
-const startGame = document.querySelector(`#startGame`);
-startGame.addEventListener('click', go);
+	*/
