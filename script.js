@@ -12,15 +12,6 @@ function getComputerChoice() {
 	return computerChoice;
 }
 
-/* This is not needed with a button UI
-
-function getHumanChoice() {
-	let humanChoice = prompt(`Make your choice:` , `rock, paper, or scissors`);
-	console.log(humanChoice);
-	return humanChoice;
-}
-
-*/
 
 let humanScore = 0;
 let compyScore = 0;
@@ -74,20 +65,11 @@ function playRound(humanChoice, computerChoice) {
 	} else alert("You're terrible at this game!");
 }
 
-/*
-		// This function will not be used with the new UI
 
-function playGame() {
-	for (i=0; i < 5; i++) {
-		playRound(getHumanChoice(), getComputerChoice());
-		alert("You: " + humanScore + " Compy: " + compyScore);
-	}
-	alert("Final Score: You: " + humanScore + " Compy: " + compyScore);
-}
-	*/
 const rockChoice = document.getElementById('rock');
 const paperChoice = document.getElementById('paper');
 const scissorsChoice = document.getElementById('scissors');
+
 
 rockChoice.addEventListener('click', function(event){
 	playRound('rock', getComputerChoice());
