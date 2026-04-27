@@ -1,13 +1,26 @@
 body {
-    background-color: tomato;
+    background-color: goldenrod;
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 header {
+    background-color: goldenrod;
+    margin: 0px;
+    padding: 8px;
+    display: flex;
+}
+
+.gameplayArea {
     background-color: tomato;
+    margin: 0px;
+    padding: 8px;
+    flex: 1;
 }
 
 footer {
-    background-color: tomato;
+    background-color: goldenrod;
+    margin: 0px;
+    padding: 8px;
 }
