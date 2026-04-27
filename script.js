@@ -4,7 +4,7 @@ function getComputerChoice() {
 
 	if (computerChoice <= 0.333) {
 		computerChoice = `rock`
-	} else if (computerChoice > 0.666) {
+	} else if (computerChoice > 0.667) {
 		computerChoice = `scissors`
 	} else computerChoice = `paper`;
 
