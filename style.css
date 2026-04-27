@@ -75,11 +75,11 @@ footer {
 ul {
     list-style-type: none;
     margin: 0px;
-    padding: 0px 0px 16px 0px;
+    padding: 0px;
 }
 
 li {
-    padding: 8px;
+    padding: 0px;
 }
 
 .data {
