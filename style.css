@@ -1,0 +1,13 @@
+body {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: tomato;
+}
+
+footer {
+    background-color: tomato;
+}
