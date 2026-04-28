@@ -91,6 +91,7 @@ li {
    font-weight: 700;
    text-align: right;
    align-self: flex-end;
+   padding-bottom: 16px;
 }
 
 .scoreBox ul {
