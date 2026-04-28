@@ -96,3 +96,8 @@ li {
 .scoreBox ul {
     list-style-position: right;
 }
+
+.announcement {
+    font-size: 32px;
+    font-weight: 700;
+}

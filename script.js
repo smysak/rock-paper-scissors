@@ -81,7 +81,13 @@ rockChoice.addEventListener('click', function(event){
 		selectionsDiv.replaceChildren();
 		alertHumanTurn.textContent = "";
 		alertComputerTurn.textContent = "";
-		alertRoundResult.textContent = "The results are in:"
+		alertRoundResult.textContent = "The results are conclusive:";
+		selectionsDiv.classList.add("announcement");
+		if (humanScore === 5) {
+			selectionsDiv.innerText = "You Win!";
+		} else {
+			selectionsDiv.innerText = "You Lose!";
+		}
 	}
 });
 
@@ -93,7 +99,13 @@ paperChoice.addEventListener('click', function(event){
 		selectionsDiv.replaceChildren();
 		alertHumanTurn.textContent = "";
 		alertComputerTurn.textContent = "";
-		alertRoundResult.textContent = "The results are in:"
+		alertRoundResult.textContent = "The results are conclusive:";
+		selectionsDiv.classList.add("announcement");
+		if (humanScore === 5) {
+			selectionsDiv.innerText = "You Win!";
+		} else {
+			selectionsDiv.innerText = "You Lose!";
+		}
 	}
 });
 
@@ -105,6 +117,12 @@ scissorsChoice.addEventListener('click', function(event){
 		selectionsDiv.replaceChildren();
 		alertHumanTurn.textContent = "";
 		alertComputerTurn.textContent = "";
-		alertRoundResult.textContent = "The results are in:"
+		alertRoundResult.textContent = "The results are conclusive:";
+		selectionsDiv.classList.add("announcement");
+		if (humanScore === 5) {
+			selectionsDiv.innerText = "You Win!";
+		} else {
+			selectionsDiv.innerText = "You Lose!";
+		}
 	}
 });
