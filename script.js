@@ -70,21 +70,32 @@ const rockChoice = document.getElementById('rock');
 const paperChoice = document.getElementById('paper');
 const scissorsChoice = document.getElementById('scissors');
 
+const selectionsDiv = document.querySelector(".selections");
+
 
 rockChoice.addEventListener('click', function(event){
 	playRound('rock', getComputerChoice());
 	hScoreCount.textContent = humanScore;
 	cScoreCount.textContent = compyScore;
+	if (compyScore === 5 || humanScore === 5){
+		selectionsDiv.replaceChildren();
+	}
 });
 
 paperChoice.addEventListener('click', function(event){
 	playRound('paper', getComputerChoice());
 	hScoreCount.textContent = humanScore;
 	cScoreCount.textContent = compyScore;
+	if (compyScore === 5 || humanScore === 5){
+		selectionsDiv.replaceChildren();
+	}
 });
 
 scissorsChoice.addEventListener('click', function(event){
 	playRound('scissors', getComputerChoice());
 	hScoreCount.textContent = humanScore;
 	cScoreCount.textContent = compyScore;
+	if (compyScore === 5 || humanScore === 5){
+		selectionsDiv.replaceChildren();
+	}
 });
