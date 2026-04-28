@@ -79,6 +79,9 @@ rockChoice.addEventListener('click', function(event){
 	cScoreCount.textContent = compyScore;
 	if (compyScore === 5 || humanScore === 5){
 		selectionsDiv.replaceChildren();
+		alertHumanTurn.textContent = "";
+		alertComputerTurn.textContent = "";
+		alertRoundResult.textContent = "The results are in:"
 	}
 });
 
@@ -88,6 +91,9 @@ paperChoice.addEventListener('click', function(event){
 	cScoreCount.textContent = compyScore;
 	if (compyScore === 5 || humanScore === 5){
 		selectionsDiv.replaceChildren();
+		alertHumanTurn.textContent = "";
+		alertComputerTurn.textContent = "";
+		alertRoundResult.textContent = "The results are in:"
 	}
 });
 
@@ -97,5 +103,8 @@ scissorsChoice.addEventListener('click', function(event){
 	cScoreCount.textContent = compyScore;
 	if (compyScore === 5 || humanScore === 5){
 		selectionsDiv.replaceChildren();
+		alertHumanTurn.textContent = "";
+		alertComputerTurn.textContent = "";
+		alertRoundResult.textContent = "The results are in:"
 	}
 });
